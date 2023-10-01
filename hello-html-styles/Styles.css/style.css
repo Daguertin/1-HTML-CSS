@@ -1,0 +1,29 @@
+header {
+    background-color: red;
+    text-align: center;
+    padding: 2em;
+}
+
+nav {
+    background-color: blueviolet;
+    margin-top: 1em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+
+.nav-links {
+    margin-right: 75px;
+    margin-left: 75px;
+}
+
+#im {
+    width: 50%;
+    height: 50%;
+}
+
+main {
+    border: 2px black;
+    text-align: center;
+    padding: 1em;
+}
+
