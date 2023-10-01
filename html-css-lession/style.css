@@ -1,0 +1,105 @@
+/* CSS - Cascading Style Sheets
+    Language that defines positioning and look of HTML elements
+    Ruleset
+    Selector {
+        declaration
+        property: value;
+        property: value;
+        key: value;
+    }
+    Box Model
+    Every element has a margin, border, and padding
+*/
+
+/* Wildcard selector - affects EVERYTHING */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Element Selector */
+body {
+    background-color: #cacaca;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Multiple Element Selector */
+header, footer {
+    background-color: #245271;
+    padding: 1em;
+    text-align: center;
+}
+
+/* ID selector */
+#nav-bar {
+    background-color: #396f94;
+    padding: 1em;
+    text-align: right;
+}
+
+/* Class selector */
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Pseudo Selector */
+.nav-link:hover {
+    color: orangered;
+}
+
+#bully-pic {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.article {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    border: 2px solid #396f94;
+    border-radius: 5px;
+}
+
+.article > ul {
+    margin-left: 1em;
+}
+
+/* Compound selector (direct children) */
+.article > h1 {
+    margin-bottom: 1em;
+}
+
+.contact-container {
+    margin: 1em;
+}
+
+/* 
+    Order of Specificity
+    1. !important
+    2. in-line style
+    3. id selector
+    4. class
+    5. element
+*/
+
+#oos {
+    width: 500px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+h3 {
+    background-color: red;
+}
+
+.oos-class {
+    background-color: royalblue !important;
+}
+
+#oos {
+    background-color: purple;
+}

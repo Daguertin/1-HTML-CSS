@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- DOCTYPE specifies document type to the browser -->
+<html lang="en">
+<!-- Element - building block of HTML document -->
+<!-- Attribute - offers additional functionality to the element -->
+<head>
+    <!-- Contains all metadata -->
+    <meta charset="UTF-8">
+    <!-- Character encoding (for different alphabets) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Specififes default sizing of the page -->
+    <link rel="stylesheet" href="style.css">
+    <title>HTML & CSS Lesson</title>
+</head>
+<body>
+    <!-- Contains everything displayed to the viewport -->
+    <header style="color: lightcoral;">HTML & CSS Fundamentals</header>
+    <!-- id & class are used to build custom selectors -->
+    <nav id="nav-bar">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#content" class="nav-link">Content</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://www.linkedin.com/in/mrpndev/" class="nav-link">LinkedIn</a>
+        <a href="./assets/face-pic.jpeg" class="nav-link">Resume</a>
+    </nav>
+    <section>
+        <article id="about" class="article">
+            <h1>Title</h1>
+            <p>This is a paragraph text</p>
+            <img id="bully-pic"
+                src="https://images.unsplash.com/photo-1611611158876-41699b77a059?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80"
+                alt="Picture of a bulldog">
+        </article>
+        <article id="content" class="article">
+            <h1>HTML Rules</h1>
+            <ul>
+                <li>Renders top to bottom (unless inline style)</li>
+                <li>Renders left to right</li>
+                <li>Some elements are inline while others are block</li>
+                <li>Takes up full width of the page</li>
+                <li>Takes as much height as the content within</li>
+                <li>Semantic Element - element that's descriptive in English language</li>
+            </ul>
+        </article>
+        <article class="article">
+            <h1>Order of Specificity</h1>
+            <h3 style="background-color: chocolate;" id="oos" class="oos-class"></h3>
+        </article>
+
+        <article class="article">
+            <h1>Git Commands</h1>
+            <ul>
+                <li>git init - initializes empty repository</li>
+                <li>git add . - adds files within the repository to stage for commit</li>
+                <li>git commit -m "commit msg" - creates the commit</li>
+            </ul>
+        </article>
+    </section>
+
+    <div class="contact-container" id="contact">
+        <form action="">
+            <input type="email" name="email" placeholder="Enter email">
+            <label for="message">Message</label>
+            <textarea name="message" id="" cols="30" rows="10">Please enter your message</textarea>
+            <button>Send</button>
+        </form>
+    </div>
+    <p>
+        <img src="" alt="">
+    <div>
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+    <p>
+        <img src="" alt="">
+    </p>
+    </p>
+    <footer>Copyright 2023</footer>
+</body>
+</html>
